@@ -1,7 +1,7 @@
 import requests, json
 
 # local url
-url = 'http://127.0.0.1:5000/' # change to your url
+url = 'https://moises-flask-api.herokuapp.com/' # change to your url
 
 # sample data
 data = {'Pclass': 3
