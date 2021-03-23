@@ -11,4 +11,4 @@ data = {'Pclass': 3
 data = json.dumps(data)
 
 send_request = requests.post(url, data)
-print(send_request.json())
+print(send_request.json()['results']['results'])

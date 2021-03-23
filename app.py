@@ -23,8 +23,7 @@ def predict():
     result = model.predict(data_df)
 
     # send back to browser
-    # output = {'results': int(result[0])}
-    output = {'results': 'oi Carol eu amo você <3'}
+    output = {'results': int(result[0])}
 
     # return data
     return jsonify(results=output)
