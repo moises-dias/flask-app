@@ -1,6 +1,6 @@
 import pandas as pd
 from flask import Flask, jsonify, request
-from flask_cors import CORS
+#from flask_cors import CORS
 import pickle
 
 # load model
@@ -8,7 +8,7 @@ model = pickle.load(open('model.pkl','rb'))
 
 # app
 app = Flask(__name__)
-cors = CORS(app)
+#cors = CORS(app)
 
 # routes
 @app.route('/', methods=['POST'])
